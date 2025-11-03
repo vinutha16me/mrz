@@ -12,8 +12,8 @@ sys.path.append(realpath(join(dirname(__file__), pardir, pardir)))
 
 from mrz.generator.td1 import TD1CodeGenerator
 
-print(TD1CodeGenerator("ID",                 # Document type   Normally 'I' or 'ID' for id cards
-                       "ESP",                # Country         3 letters code or country name
+print(TD1CodeGenerator("C1",                 # Document type   Normally 'I' or 'ID' for id cards
+                       "USA",                # Country         3 letters code or country name
                        "BAA000589",          # Document number
                        "800101",             # Birth date      YYMMDD
                        "F",                  # Genre           Male: 'M', Female: 'F' or Undefined
